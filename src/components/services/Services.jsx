@@ -1,0 +1,106 @@
+import React from 'react';
+import './services.css';
+import {AiOutlineCheck} from 'react-icons/ai';
+
+
+const Services = () => {
+  return (
+    <section id='services'>
+       <h5>What i offer</h5>
+      <h2>Services</h2>
+      <div className="container services__container">
+        <article className='service'>
+          <div className="service__head">
+            <h3>FRONTEND DEVELOPMENT</h3>
+          </div>
+          <ul className="service__list">
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Implement user interface designs.</p>
+             </li>  
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Develop responsive, mobile-friendly designs.</p>
+             </li> 
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Add interactivity with prefered language.</p>
+             </li> 
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Test and debug frontend code.</p>
+             </li> 
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Collaborate with cross-functional teams.</p>
+             </li> 
+          </ul>
+        </article>
+        {/* END OF UI/UX */}
+        <article className='service'>
+          <div className="service__head">
+            <h3>BACKEND DEVELOPMENT</h3>
+          </div>
+          <ul className="service__list">
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Server-side programming.</p>
+             </li>  
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Database management.</p>
+             </li> 
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>API development and integration.</p>
+             </li> 
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Security implementation.</p>
+             </li> 
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Collaboration with frontend developers.</p>
+             </li> 
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p> Identifying and implementing optimizations to improve the speed and efficiency of backend systems and processes.</p>
+             </li> 
+           
+          </ul>
+        </article>
+        {/* END OF WEB DEVELOPMENT */}
+        <article className='service'>
+          <div className="service__head">
+            <h3>Technical Writing</h3>
+          </div>
+          <ul className="service__list">
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Create comprehensive documentation for software applications or systems.</p>
+             </li>  
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Craft user guides and manuals for effective product usage.</p>
+             </li> 
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Document APIs with detailed information and examples.</p>
+             </li> 
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Write informative technical articles on software development and industry trends.</p>
+             </li> 
+             <li>
+               <AiOutlineCheck className='service__list-icon'/>
+               <p>Collaborate with subject matter experts to gather accurate information for documentation.</p>
+             </li> 
+          </ul>
+        </article>
+        {/* END OF CONTENT CREATION */}
+      </div>
+    </section>
+  )
+}
+
+export default Services;
