@@ -44,7 +44,7 @@ const About = () => {
               test, and maintain software applications using languages such as JavaScript,
                Python, and PHP, along with frameworks like ReactJs, and tools like Git, GitHub,
                 and VScode. I excel in probelm solving, possess strong technical skills, curiosity, 
-                creativity, good communication skills, and thrive in collaborative environments
+                creativity, good communication skills, and thrive in collaborative environments.
               </p>
               
               <a href="#contact" className='btn btn-primary'> Let's Talk</a>
