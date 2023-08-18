@@ -61,12 +61,7 @@ const Services = () => {
              <li>
                <AiOutlineCheck className='service__list-icon'/>
                <p>Collaboration with frontend developers.</p>
-             </li> 
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p> Identifying and implementing optimizations to improve the speed and efficiency of backend systems and processes.</p>
-             </li> 
-           
+             </li>
           </ul>
         </article>
         {/* END OF WEB DEVELOPMENT */}
@@ -90,11 +85,7 @@ const Services = () => {
              <li>
                <AiOutlineCheck className='service__list-icon'/>
                <p>Write informative technical articles on software development and industry trends.</p>
-             </li> 
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>Collaborate with subject matter experts to gather accurate information for documentation.</p>
-             </li> 
+             </li>
           </ul>
         </article>
         {/* END OF CONTENT CREATION */}

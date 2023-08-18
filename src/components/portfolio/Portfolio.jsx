@@ -18,7 +18,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={IMG1} alt="" />
           </div>
-            <h3>Health-care website</h3>
+            <h3>Health-Care Website</h3>
             <div className="portfolio__item-cta">
             <a href="" className='btn' target='_blank'>GitHub</a>
             <a href="https://anchorteeshealth.com/" className='btn btn-primary' target='_blank'>Live Demo</a>
@@ -40,7 +40,7 @@ const Portfolio = () => {
        <div className="portfolio__item-image">
             <img src={IMG3} alt="" />
           </div>
-            <h3>This is a portfolio item title</h3>
+            <h3>This is a portfolio item title.</h3>
             <div className="portfolio__item-cta">
             <a href="" className='btn' target='_blank'>GitHub</a>
             <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
