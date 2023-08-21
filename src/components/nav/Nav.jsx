@@ -1,5 +1,5 @@
-import React from 'react'
-import './nav.css'
+import React from 'react' ;
+import './nav.css';
 import {AiOutlineHome} from 'react-icons/ai';
 import {AiOutlineUser} from 'react-icons/ai';
 import {BiBrain} from 'react-icons/bi';
