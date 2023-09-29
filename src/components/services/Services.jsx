@@ -1,15 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './services.css';
 import {AiOutlineCheck} from 'react-icons/ai';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Services = () => {
+  useEffect(()=>{
+    Aos.init({duration: 1000});
+  }, [])
   return (
     <section id='services'>
        <h5>What i offer</h5>
       <h2>Services</h2>
       <div className="container services__container">
-        <article className='service'>
+        <article className='service'
+        data-aos = "fade-left"
+        data-aos-easing = "ease-out-cubic"
+        data-aos-duration = "1000">
           <div className="service__head">
             <h3>FRONTEND DEVELOPMENT</h3>
           </div>
@@ -37,7 +44,10 @@ const Services = () => {
           </ul>
         </article>
         {/* END OF UI/UX */}
-        <article className='service'>
+        <article className='service'
+        data-aos = "fade-left"
+        data-aos-easing = "ease-out-cubic"
+        data-aos-duration = "2000">
           <div className="service__head">
             <h3>BACKEND DEVELOPMENT</h3>
           </div>
@@ -65,7 +75,10 @@ const Services = () => {
           </ul>
         </article>
         {/* END OF WEB DEVELOPMENT */}
-        <article className='service'>
+        <article className='service'
+        data-aos = "fade-left"
+        data-aos-easing = "ease-out-cubic"
+        data-aos-duration = "3000">
           <div className="service__head">
             <h3>Technical Writing</h3>
           </div>

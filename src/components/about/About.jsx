@@ -1,17 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './about.css';
 import meAbout from '../../assets/meAbout.png'
 import {FaAward} from 'react-icons/fa';
 import {FiUsers} from 'react-icons/fi';
 import {AiFillFolderOpen} from 'react-icons/ai';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 const About = () => {
+  useEffect(()=>{
+    Aos.init();
+  }, [])
   return (
   <section id= 'about'> 
     <h5>Get to know</h5>
     <h2>About Me</h2> 
-    <div className='container about__container'>
+    <div className='container about__container' data-aos = "fade-right" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000" >
           <div className="about__me">
             <div className="about__meAbout">
               <img src={meAbout} alt="About Image" />

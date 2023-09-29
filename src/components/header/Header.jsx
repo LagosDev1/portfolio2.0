@@ -8,17 +8,19 @@ import Aos from 'aos';
 
 const Header = () => {
   useEffect(()=>{
-    Aos.init({duration: 4000});
+    Aos.init({duration: 1000});
   }, [])
   return (
     <header>
-      <div className="container header__container" data-aos = "fade-right">
+      <div className="container header__container" data-aos = "fade-left"
+            data-aos-easing = "ease-out-cubic"
+            data-aos-duration = "10000">
         <h5>Hello I'm</h5>
         <h1>Godspower Abah</h1>
         <h5 className="fullstack">Fullstack Developer</h5>
         <CTA />
         <HeaderSocials/>
-        <div className="mainIMAGE" data-aos = "fade-right">
+        <div className="mainIMAGE" data-aos = "fade-left">
         <img src={mainIMAGE} alt="" height= '100%'/>
         </div>
         <a href="#contact" className='scroll__down'>Scroll Down</a>
