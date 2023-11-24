@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 
 
 const About = () => {
-  useEffect(()=>{
+  useEffect(()=>{ 
     Aos.init();
   }, [])
   return (
