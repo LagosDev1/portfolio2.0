@@ -15,7 +15,7 @@ const About = () => {
   return (
   <section id= 'about'> 
     <h5>Get to know</h5>
-    <h2>About Me</h2> 
+    <h2>About Me</h2>  
     <div className='container about__container' >
           <div className="about__me" data-aos = "fade-right" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
             <div className="about__meAbout">
