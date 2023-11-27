@@ -19,7 +19,7 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
-        <article className='portfolio__item'>
+        <article className='portfolio__item'data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
           <div className="portfolio__item-image">
             <img src={IMG1} alt="" />
           </div>
