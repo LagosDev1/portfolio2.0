@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import './portfolio.css';
 import IMG1 from '../../assets/portfolio1.jpg';
 import IMG2 from '../../assets/portfolio2.jpg';
@@ -11,6 +11,9 @@ import 'aos/dist/aos.css';
 
 
 const Portfolio = () => {
+  useEffect(()=>{ 
+    Aos.init();
+  }, [])
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
