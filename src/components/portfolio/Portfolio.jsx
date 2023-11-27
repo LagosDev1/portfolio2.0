@@ -30,7 +30,7 @@ const Portfolio = () => {
             </div>
         </article>
 
-        <article className='portfolio__item'>
+        <article className='portfolio__item'data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
           <div className="portfolio__item-image">
             <img src={IMG2} alt="" />
           </div>
@@ -41,7 +41,7 @@ const Portfolio = () => {
             </div>
         </article>
 
-        <article className='portfolio__item'>
+        <article className='portfolio__item'data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
        <div className="portfolio__item-image">
             <img src={IMG3} alt="" />
           </div>
@@ -52,7 +52,7 @@ const Portfolio = () => {
             </div>
         </article>
 
-        <article className='portfolio__item'>
+        <article className='portfolio__item'data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
           <div className="portfolio__item-image">
             <img src={IMG4} alt="" />
           </div>
@@ -63,7 +63,7 @@ const Portfolio = () => {
             </div>
         </article>
 
-        <article className='portfolio__item'>
+        <article className='portfolio__item'data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
           <div className="portfolio__item-image">
             <img src={IMG5} alt="" />
           </div>
@@ -74,7 +74,7 @@ const Portfolio = () => {
             </div>
         </article>
 
-        <article className='portfolio__item'>
+        <article className='portfolio__item'data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
           <div className="portfolio__item-image">
             <img src={IMG6} alt="" />
           </div>
