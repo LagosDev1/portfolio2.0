@@ -16,7 +16,7 @@ const Experience = () => {
      <h2 data-aos = "fade-left" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">My Experience</h2>
 
      <div className="container experience__container">
-        <div className="experience__frontend" data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
+        <div className="experience__frontend" data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
           <h3>Frontend Development</h3>
           <div className="experience__content">
             <article className='experience__details'>
@@ -57,7 +57,7 @@ const Experience = () => {
            
           </div>
         </div>
-        <div className="experience__backend" data-aos = "fade-right" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
+        <div className="experience__backend" data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
         <h3>Backend Development</h3>
           <div className="experience__content">
             <article className='experience__details'>

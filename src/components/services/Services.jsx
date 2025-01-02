@@ -45,7 +45,7 @@ const Services = () => {
         </article>
         {/* END OF UI/UX */}
         <article className='service'
-        data-aos = "fade-left"
+        data-aos = "fade-right"
         data-aos-easing = "ease-out-cubic"
         data-aos-duration = "2000">
           <div className="service__head">
