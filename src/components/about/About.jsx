@@ -17,7 +17,7 @@ const About = () => {
     <h5>Get to know</h5>
     <h2>About Me</h2>  
     <div className='container about__container' >
-          <div className="about__me" data-aos = "fade-right" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
+          <div className="about__me">
             <div className="about__meAbout">
               <img src={meAbout} alt="About Image" />
             </div>
