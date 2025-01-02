@@ -31,21 +31,21 @@ const Contact = () => {
       
       <div className="container contact__container">
         <div className="contact__options">
-          <article className='contact__option'>
+          <article className='contact__option' data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
             <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>abahanointed@gmail.com</h5>
              <a href="mailto:abahanointed@gmail.com" target='_blank'>Send a message</a>
           </article>
 
-          <article className='contact__option'>
+          <article className='contact__option' data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
             <FaTwitterSquare className='contact__option-icon'/>
             <h4>Twitter</h4>
             <h5>@abahanointed</h5>
              <a href="https://twitter.com/abahanointed" target='_blank'>Send a message</a>
           </article>
 
-          <article className='contact__option'>
+          <article className='contact__option' data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
             <BsWhatsapp className='contact__option-icon'/>
             <h4>Whatsapp</h4>
             <h5>(+234) 8112075793</h5>
@@ -53,7 +53,7 @@ const Contact = () => {
           </article>
         </div>
         {/* End of contact option */}
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
           <input type="text" name='name' placeholder='Your Full Name' required/>
           <input type="text" name='email' placeholder='Your Email' required/> 
           <textarea name="message" id=""  rows="7" placeholder='Your Message' required></textarea>      
