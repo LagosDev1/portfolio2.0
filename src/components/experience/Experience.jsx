@@ -12,8 +12,8 @@ const Experience = () => {
   }, [])
   return (
     <section id='experience'>
-     <h5 data-aos = "fade-right" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">What skill I have</h5>
-     <h2 data-aos = "fade-left" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">My Experience</h2>
+     <h5 data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">What skill I have</h5>
+     <h2 data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">My Experience</h2>
 
      <div className="container experience__container">
         <div className="experience__frontend" data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
