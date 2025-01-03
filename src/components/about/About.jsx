@@ -47,7 +47,7 @@ const About = () => {
               <p data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
               I am a software Engineer, I design, develop, 
               test, and maintain software applications using languages such as JavaScript,
-               Python, and PHP, along with frameworks like ReactJs, and tools like Git, GitHub,
+               and Python, along with frameworks like ReactJs, and tools like Git, GitHub,
                 and VScode. I excel in probelm solving, possess strong technical skills, curiosity, 
                 creativity, good communication skills, and thrive in collaborative environments.
               </p>
