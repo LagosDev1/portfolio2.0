@@ -16,8 +16,8 @@ const Portfolio = () => {
   }, [])
   return (
     <section id='portfolio'>
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5 data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">My Recent Work</h5>
+      <h2 data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">Portfolio</h2>
       <div className="container portfolio__container">
         <article className='portfolio__item'data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
           <div className="portfolio__item-image">
