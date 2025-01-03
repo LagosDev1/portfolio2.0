@@ -10,13 +10,11 @@ const Services = () => {
   }, [])
   return (
     <section id='services'>
-       <h5>What i offer</h5>
-      <h2>Services</h2>
+       <h5 data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">What i offer</h5>
+      <h2 data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">Services</h2>
       <div className="container services__container">
         <article className='service'
-        data-aos = "fade-left"
-        data-aos-easing = "ease-out-cubic"
-        data-aos-duration = "1000">
+        data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
           <div className="service__head">
             <h3>FRONTEND DEVELOPMENT</h3>
           </div>
