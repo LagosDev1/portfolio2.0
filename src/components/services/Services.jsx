@@ -14,7 +14,7 @@ const Services = () => {
       <h2 data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">Services</h2>
       <div className="container services__container">
         <article className='service'
-        data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
+        data-aos = "fade-right" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
           <div className="service__head">
             <h3>FRONTEND DEVELOPMENT</h3>
           </div>
@@ -43,7 +43,7 @@ const Services = () => {
         </article>
         {/* END OF UI/UX */}
         <article className='service'
-        data-aos = "fade-right"
+        data-aos = "fade-up"
         data-aos-easing = "ease-out-cubic"
         data-aos-duration = "2000">
           <div className="service__head">
