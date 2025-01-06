@@ -91,7 +91,7 @@ const Services = () => {
              </li> 
              <li>
                <AiOutlineCheck className='service__list-icon'/>
-               <p>Document APIs with detailed information and examples.</p>
+               <p>I also Document APIs with detailed information and examples.</p>
              </li> 
              <li>
                <AiOutlineCheck className='service__list-icon'/>
