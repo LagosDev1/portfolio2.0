@@ -21,7 +21,7 @@ const Services = () => {
           <ul className="service__list">
              <li>
                <AiOutlineCheck className='service__list-icon'/>
-               <p>Implement user interface designs.</p>
+               <p>I Implement user interface designs.</p>
              </li>  
              <li>
                <AiOutlineCheck className='service__list-icon'/>
