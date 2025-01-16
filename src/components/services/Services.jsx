@@ -35,6 +35,7 @@ const Services = () => {
                <AiOutlineCheck className='service__list-icon'/>
                <p>Test and debug frontend code.</p>
              </li> 
+             
              <li>
                <AiOutlineCheck className='service__list-icon'/>
                <p>Collaborate with cross-functional teams.</p>
