@@ -17,7 +17,7 @@ const Experience = () => {
 
      <div className="container experience__container">
         <div className="experience__frontend" data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
-          <h3>Front-End Development</h3>
+          <h3>Frontend Development</h3>
           <div className="experience__content">
             <article className='experience__details'>
               <BsFillPatchCheckFill className='experience__details-icon' />
