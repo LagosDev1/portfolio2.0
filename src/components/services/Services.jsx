@@ -79,7 +79,7 @@ const Services = () => {
         data-aos-easing = "ease-out-cubic"
         data-aos-duration = "3000">
           <div className="service__head">
-            <h3>Technical Writing</h3>
+            <h3>Technical</h3>
           </div>
           <ul className="service__list">
              <li>
