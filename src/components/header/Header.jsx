@@ -6,6 +6,7 @@ import HeaderSocials from './HeaderSocials';
 import Aos from 'aos';
 
 
+
 const Header = () => {
   useEffect(()=>{
     Aos.init({duration: 1000});
