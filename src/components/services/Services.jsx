@@ -23,10 +23,10 @@ const Services = () => {
                <AiOutlineCheck className='service__list-icon'/>
                <p>Implement user interface designs.</p>
              </li>  
-             <li>
+             {/* <li>
                <AiOutlineCheck className='service__list-icon'/>
                <p>Develop responsive, mobile-friendly designs.</p>
-             </li> 
+             </li>  */}
              <li>
                <AiOutlineCheck className='service__list-icon'/>
                <p>Add interactivity with prefered language.</p>
