@@ -19,10 +19,10 @@ const Services = () => {
             <h3>FRONTEND DEVELOPMENT</h3>
           </div>
           <ul className="service__list">
-             <li>
+             {/* <li>
                <AiOutlineCheck className='service__list-icon'/>
                <p>Implement user interface designs.</p>
-             </li>  
+             </li>   */}
              <li>
                <AiOutlineCheck className='service__list-icon'/>
                <p>Develop responsive, mobile-friendly designs.</p>
