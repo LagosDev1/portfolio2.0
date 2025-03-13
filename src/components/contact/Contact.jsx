@@ -8,20 +8,20 @@ import { useRef } from 'react';
 import emailjs from 'emailjs-com'
 
 const Contact = () => {
-  const form = useRef();
-  const [messageSent, setMessageSent] = useState(false);
+  // const form = useRef();
+  // const [messageSent, setMessageSent] = useState(false);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs.sendForm('service_rd1wv7p', 'template_cbva0kw', form.current, '7ukr8B-_yeM9Nu_7g')
-      .then((result) => {
-          console.log(result.text);
-          setMessageSent(true);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset();
+  //   emailjs.sendForm('service_rd1wv7p', 'template_cbva0kw', form.current, '7ukr8B-_yeM9Nu_7g')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //         setMessageSent(true);
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  //     e.target.reset();
    };
 
   return (
