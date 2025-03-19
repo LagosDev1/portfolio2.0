@@ -28,10 +28,10 @@ const Experience = () => {
             </article>
             <article className='experience__details'>
               <BsFillPatchCheckFill className='experience__details-icon' />
-              <div>
+              {/* <div>
                 <h4>CSS</h4>
                 <small className='text-light'>Intermidiate</small>
-              </div>
+              </div> */}
             </article>
             <article className='experience__details'>
               <BsFillPatchCheckFill className='experience__details-icon'/>
