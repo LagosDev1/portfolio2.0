@@ -45,11 +45,9 @@ const About = () => {
               </div>
 
               <p data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
-              I am a software Engineer, I design, develop, 
-              test, and maintain software applications using languages such as JavaScript,
-               and Python, along with frameworks like ReactJs, and tools like Git, GitHub,
-                and VScode. I excel in probelm solving, possess strong technical skills, curiosity, 
-                creativity, good communication skills, and thrive in collaborative environments.
+              I am a Software Engineer with expertise in designing, developing, testing, and maintaining software applications. 
+              I specialize in programming languages such as JavaScript and Python, leveraging frameworks like React.js and development tools including Git, GitHub, and VS Code. 
+              With strong problem-solving abilities, technical proficiency, and a keen sense of curiosity and creativity, I excel in collaborative environments and communicate effectively to drive innovation and efficiency.
               </p>
               
               <a href="#contact" className='btn btn-primary' data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000"> Let's Talk</a>
