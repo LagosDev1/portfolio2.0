@@ -27,7 +27,7 @@ const About = () => {
           <div className="about__content">
               <div className="about__cards">
                 <article className='about__card' data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
-                    <FaAward className='about__icon'/>
+                    <FaAward className='about__icon'/>  
                     <h5>Experience</h5>
                     <small>4+ Years Working Experience</small>
                 </article>
