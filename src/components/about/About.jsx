@@ -12,6 +12,7 @@ const About = () => {
   useEffect(()=>{ 
     Aos.init();
   }, [])
+  
   return (
   <section id= 'about'> 
     <h5 data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">Get to know</h5>
