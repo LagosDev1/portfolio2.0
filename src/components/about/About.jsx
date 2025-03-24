@@ -23,7 +23,7 @@ const About = () => {
               <img src={meAbout} alt="About Image" />
             </div>
           </div>
-          
+    
           <div className="about__content">
               <div className="about__cards">
                 <article className='about__card' data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000">
