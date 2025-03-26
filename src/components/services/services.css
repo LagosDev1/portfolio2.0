@@ -41,14 +41,14 @@
     margin-bottom: 0.8rem;
 }
 
-.service__list-icon{
+/* .service__list-icon{
     color: var(--color-primary);
     margin-top: 5px;
 }
 .service__list p{
     font-size: 0.9rem;
 
-}
+} */
 
 /* Media Queries (Medium devies like Tablet) */
 @media screen and (max-width :1024px){
