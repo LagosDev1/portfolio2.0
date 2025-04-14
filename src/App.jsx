@@ -11,6 +11,8 @@ import Footer from './components/footer/Footer';
 import HashLoader from "react-spinners/HashLoader";
 
 
+
+
 const App = () => {
   const [loading, setLoading]= useState(false);
 
@@ -33,6 +35,8 @@ const App = () => {
             width:'100%',
             height: '100vh',
           }}
+
+  
         >
         
        <HashLoader
