@@ -38,7 +38,8 @@ const App = () => {
 
   
         >
-        
+      
+          
        <HashLoader
         color={"#4db5ff"}
         loading={loading}
