@@ -50,10 +50,6 @@ const About = () => {
               I specialize in programming languages such as JavaScript and Python, leveraging frameworks like React.js and development tools including Git, GitHub, and VS Code. 
               With strong problem-solving abilities, technical proficiency, and a keen sense of curiosity and creativity, 
               I excel in collaborative environments and communicate effectively to drive innovation and efficiency.
-              Our deepest fear is not that we are inadequate, our deeepest is that we are power beyond measure. 
-              Sometimes we ask our selves who are my to be brilliant talented and fabulous. Actually, who are you not to be. 
-              We are born to make manifest the glory of God that is with us. We let our own luck shine, and shall give 
-
               </p>
               
               <a href="#contact" className='btn btn-primary' data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000"> Let's Talk</a>
