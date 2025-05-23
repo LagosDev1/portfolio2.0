@@ -54,7 +54,7 @@ input, textarea{
 }
 
 .message-alert{
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 /* Media Queries (Medium devies like Tablet) */
