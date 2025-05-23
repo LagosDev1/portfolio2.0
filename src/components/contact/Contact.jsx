@@ -57,6 +57,7 @@ const Contact = () => {
         <form ref={form} onSubmit={sendEmail} data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
           <input type="text" name='name' placeholder='Your Full Name' required/>
           <input type="text" name='email' placeholder='Your Email' required/> 
+          <input type="text" name='subject' placeholder='Subject' required/> 
           <textarea name="message" id=""  rows="7" placeholder='Your Message' required></textarea>      
           <button type='submit' className='btn btn-primary'  >Send Message</button>
         </form>
