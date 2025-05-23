@@ -25,6 +25,7 @@ const Contact = () => {
    };
 
 
+
   return (
     <section id='contact'>
       <h5 data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">Get In Touch</h5>
@@ -49,7 +50,7 @@ const Contact = () => {
           <article className='contact__option' data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
             <BsWhatsapp className='contact__option-icon'/>
             <h4>Whatsapp</h4>
-            <h5>(+234) 8112075793</h5>
+            <h5>(+234)8112075793</h5>
              <a href="https://api.whatsapp.com/send?phone=+2348112075793" target='_blank'>Send a message</a>
           </article>
         </div>
