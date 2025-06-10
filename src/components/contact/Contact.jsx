@@ -24,7 +24,7 @@ const Contact = () => {
       e.target.reset();
    };
 
-   
+
 
   // Reset the messageSent state after a certain time
   return (
