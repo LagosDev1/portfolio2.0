@@ -24,7 +24,7 @@ const Contact = () => {
       e.target.reset();
    };
 
-   
+  // Reset the messageSent state after a certain time
   return (
     <section id='contact'>
       <h5 data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">Get In Touch</h5>
