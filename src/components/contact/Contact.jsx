@@ -24,7 +24,7 @@ const Contact = () => {
       e.target.reset();
    };
 
-
+  // Set messageSent to true when the email is sent successfully
 
   // Reset the messageSent state after a certain time
   return (
