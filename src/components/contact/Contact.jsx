@@ -21,7 +21,7 @@ const Contact = () => {
       }, (error) => { 
           console.log(error.text);
       });
-      // e.target.reset();
+      e.target.reset();
    };
   
   // Set messageSent to true when the email is sent successfully
