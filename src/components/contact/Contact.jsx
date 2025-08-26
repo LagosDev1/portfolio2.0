@@ -23,7 +23,9 @@ const Contact = () => {
       });
       e.target.reset();
    };
-  
+
+
+
   // Set messageSent to true when the email is sent successfully
 
   // Reset the messageSent state after a certain time
@@ -36,7 +38,7 @@ const Contact = () => {
         <div className="contact__options">
           <article className='contact__option' data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
             <MdOutlineEmail className='contact__option-icon'/>
-            <h4>Email</h4>
+            <h4>Emai Our deepest fear is not that we arre inadewuare our deapest is that we are powerful beyond measures, we ask ourselves who are my to be brilliant tallented and f</h4>
             <h5>abahanointed@gmail.com</h5>
              <a href="mailto:abahanointed@gmail.com" target='_blank'>Send a message</a>
           </article>
