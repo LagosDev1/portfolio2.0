@@ -6,6 +6,8 @@ import { useState } from 'react';
 import {BsWhatsapp} from 'react-icons/bs';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
+import { driver } from "driver.js";
+import "driver.js/dist/driver.css";
 
 const Contact = () => {
   const form = useRef();
@@ -24,6 +26,15 @@ const Contact = () => {
       e.target.reset();
    };
 
+  // for Driver.js
+const driverObj = driver();
+driverObj.highlight({
+  element: "#contact",
+  popover: {
+    title: "This is a contact section",
+    description: "Send me a message and I'll get back to you as soon as possible.",
+  }
+});
 
 
   // Set messageSent to true when the email is sent successfully
