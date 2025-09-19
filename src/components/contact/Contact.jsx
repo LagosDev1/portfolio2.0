@@ -29,7 +29,7 @@ const Contact = () => {
   // for Driver.js
 const driverObj = driver();
 driverObj.highlight({
-  element: "#contact",
+  element: "#contact__options",
   popover: {
     title: "This is a contact section",
     description: "Send me a message and I'll get back to you as soon as possible.",
@@ -46,7 +46,7 @@ driverObj.highlight({
       <h2 data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">Contact Me</h2>
       
       <div className="container contact__container">
-        <div className="contact__options">
+        <div className="contact__options" id='contact__options'>
           <article className='contact__option' data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
             <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
