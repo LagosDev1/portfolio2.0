@@ -27,14 +27,14 @@ const Contact = () => {
    };
 
   // for Driver.js
-const driverObj = driver();
-driverObj.highlight({
-  element: "#contact",
-  popover: {
-    title: "This is a contact section",
-    description: "Send me a message and I'll get back to you as soon as possible.",
-  }
-});
+// const driverObj = driver();
+// driverObj.highlight({
+//   element: "#contact",
+//   popover: {
+//     title: "This is a contact section",
+//     description: "Send me a message and I'll get back to you as soon as possible.",
+//   }
+// });
 
 
   // Set messageSent to true when the email is sent successfully
