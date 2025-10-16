@@ -26,7 +26,7 @@ const Contact = () => {
       e.target.reset();
    };
 
-  // for Driver.js
+//   for Driver.js
 // const driverObj = driver();
 // driverObj.highlight({
 //   element: "#contact",
