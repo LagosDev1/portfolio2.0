@@ -55,6 +55,7 @@ const About = () => {
               <a href="#contact" className='btn btn-primary' data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "10000"> Let's Talk</a>
           </div>
 
+          
 
     </div>
   </section>
