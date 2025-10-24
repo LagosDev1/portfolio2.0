@@ -37,9 +37,6 @@ const Contact = () => {
 // });
 
 
-
-
-
   // Set messageSent to true when the email is sent successfully
 
   // Reset the messageSent state after a certain time
