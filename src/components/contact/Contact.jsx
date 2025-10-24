@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.css';
-import {MdOutlineEmail} from 'react-icons/md';
+import {MdDescription, MdOutlineEmail} from 'react-icons/md';
 import {FaTwitterSquare} from 'react-icons/fa';
 import { useState } from 'react';
 import {BsWhatsapp} from 'react-icons/bs';
@@ -37,9 +37,7 @@ const Contact = () => {
 // });
 
 
-  // Set messageSent to true when the email is sent successfully
-
-  // Reset the messageSent state after a certain time
+// Reset the messageSent state after a certain time
   return (
     <section id='contact'>
       <h5 data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">Get In Touch</h5>
