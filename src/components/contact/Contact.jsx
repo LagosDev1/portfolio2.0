@@ -41,7 +41,6 @@ const Contact = () => {
 
 
 
-
 // Reset the messageSent state after a certain time
   return (
     <section id='contact'>
