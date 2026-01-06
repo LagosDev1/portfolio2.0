@@ -17,7 +17,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ez31y4x', 'template_cbva0kw', form.current, '7ukr8B-_yeM9Nu_7g')
+    emailjs.sendForm( 'service_ez31y4x', 'template_cbva0kw', form.current, '7ukr8B-_yeM9Nu_7g')
       .then((result) => {
           console.log(result.text);
           setMessageSent(true);
@@ -26,19 +26,6 @@ const Contact = () => {
       });
       e.target.reset();
    };
-
-//   for Driver.js
-// const driverObj = driver();
-// driverObj.highlight({
-//   element: "#contact",
-//   popover: {
-//     title: "This is a contact section",
-//     description: "Send me a message and I'll get back to you as soon as possible.",
-//   }
-// });
-
-
-
 
 
 // Reset the messageSent state after a certain time
