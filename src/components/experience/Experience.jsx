@@ -65,7 +65,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="experience__backend" data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
-        <h3>Backend Development</h3>
+        <h3>API Development</h3>
           <div className="experience__content">
             <article className='experience__details'>
               <BsFillPatchCheckFill className='experience__details-icon'/>
@@ -77,29 +77,8 @@ const Experience = () => {
             <article className='experience__details'>
               <BsFillPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>NodeJS</h4>
+                <h4>Postman</h4>
                 <small className='text-light'>Intermidiate</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>MYSQL</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>MongoDB</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>PHP</h4>
-                <small className='text-light'>Experienced</small>
               </div>
             </article>
           </div>

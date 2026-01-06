@@ -48,24 +48,16 @@ const Services = () => {
         data-aos-easing = "ease-out-cubic"
         data-aos-duration = "2000">
           <div className="service__head">
-            <h3>BACKEND DEVELOPMENT</h3> 
+            <h3>API DEVELOPMENT</h3> 
           </div>
           <ul className="service__list">
              <li>
                <AiOutlineCheck className='service__list-icon'/>
-               <p>Server-side programming.</p>
+               <p>API Design</p>
              </li>  
              <li>
                <AiOutlineCheck className='service__list-icon'/>
-               <p>Database management.</p>
-             </li> 
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>API development and integration.</p>
-             </li> 
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>Security implementation.</p>
+               <p>API Documentation</p>
              </li> 
              <li>
                <AiOutlineCheck className='service__list-icon'/>
