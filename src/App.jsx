@@ -23,6 +23,7 @@ const App = () => {
     }, 4000)
 
   }, [])
+  
   return (
     <div>
       {loading ? (
