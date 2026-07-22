@@ -12,7 +12,6 @@ import HashLoader from "react-spinners/HashLoader";
 
 
 
-
 const App = () => {
   const [loading, setLoading]= useState(false);
 
@@ -24,6 +23,7 @@ const App = () => {
 
   }, [])
   
+
   return (
     <div>
       {loading ? (
@@ -36,11 +36,9 @@ const App = () => {
             width:'100%',
             height: '100vh',
           }}
+        
+        > 
 
-  
-        >
-      
-          
        <HashLoader
         color={"#4db5ff"}
         loading={loading}
@@ -66,4 +64,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
