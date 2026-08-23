@@ -66,6 +66,7 @@ const Services = () => {
           </ul>
         </article>
         {/* END OF WEB DEVELOPMENT */}
+        
         <article className='service'
         data-aos = "fade-left"
         data-aos-easing = "ease-out-cubic"
