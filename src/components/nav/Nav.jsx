@@ -1,24 +1,35 @@
-import React from 'react' ;
+import React, { useState } from 'react';
 import './nav.css';
-import {AiOutlineHome} from 'react-icons/ai';
-import {AiOutlineUser} from 'react-icons/ai';
-import {BiBrain} from 'react-icons/bi';
-import {RiServiceLine} from 'react-icons/ri';
-import {BiMessageDetail} from 'react-icons/bi';
-import { useState } from 'react';
+import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
+import { BiBrain, BiMessageDetail } from 'react-icons/bi';
+import { RiServiceLine } from 'react-icons/ri';
 
+const navItems = [
+  { href: '#home', icon: AiOutlineHome, label: 'Home' },
+  { href: '#about', icon: AiOutlineUser, label: 'About' },
+  { href: '#experience', icon: BiBrain, label: 'Experience' },
+  { href: '#services', icon: RiServiceLine, label: 'Services' },
+  { href: '#contact', icon: BiMessageDetail, label: 'Contact' },
+];
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#');
+  const [activeNav, setActiveNav] = useState('#home');
+
   return (
-   <nav>
-      <a href="#" onClick={()=> setActiveNav('#')} className={activeNav === '#' ? "active" : " "} ><AiOutlineHome /></a>
-      <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? "active" : " "}><AiOutlineUser /></a>
-      <a href="#experience" onClick={()=> setActiveNav('#experience')} className={activeNav === '#experience' ? "active" : " "}><BiBrain/></a>
-      <a href="#services" onClick={()=> setActiveNav('#services')} className={activeNav === '#services' ? "active" : " "}><RiServiceLine /></a>
-      <a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? "active" : " "}><BiMessageDetail /></a>
-   </nav>
-  )
-}
+    <nav>
+      {navItems.map(({ href, icon: Icon, label }) => (
+        <a
+          key={href}
+          href={href}
+          aria-label={label}
+          onClick={() => setActiveNav(href)}
+          className={activeNav === href ? 'active' : ''}
+        >
+          <Icon />
+        </a>
+      ))}
+    </nav>
+  );
+};
 
 export default Nav;

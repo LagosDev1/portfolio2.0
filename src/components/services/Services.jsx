@@ -1,103 +1,66 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './services.css';
-import {AiOutlineCheck} from 'react-icons/ai';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import { AiOutlineCheck } from 'react-icons/ai';
+
+const services = [
+  {
+    title: 'FRONTEND DEVELOPMENT',
+    aos: { 'data-aos': 'fade-right', 'data-aos-easing': 'ease-out-cubic' },
+    items: [
+      'Implement user interface designs.',
+      'Develop responsive, mobile-friendly designs.',
+      'Add interactivity with preferred language.',
+      'Test and debug frontend code.',
+      'Collaborate with cross-functional teams.',
+    ],
+  },
+  {
+    title: 'API DEVELOPMENT',
+    aos: { 'data-aos': 'fade-up', 'data-aos-easing': 'ease-out-cubic', 'data-aos-duration': '2000' },
+    items: [
+      'API Design',
+      'API Documentation',
+      'Collaboration with frontend developers.',
+    ],
+  },
+  {
+    title: 'Technical Writing',
+    aos: { 'data-aos': 'fade-left', 'data-aos-easing': 'ease-out-cubic', 'data-aos-duration': '3000' },
+    items: [
+      'Create comprehensive documentation for software applications or systems.',
+      'I also craft user guides and manuals for effective product usage.',
+      'I also Document APIs with detailed information and examples.',
+      'Write informative technical articles on software development and industry trends.',
+    ],
+  },
+];
+
+const fadeUp = { 'data-aos': 'fade-up', 'data-aos-easing': 'ease-out-cubic' };
 
 const Services = () => {
-  useEffect(()=>{
-    Aos.init({duration: 1000});
-  }, [])
   return (
-    <section id='services'>
-       <h5 data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">What i offer</h5>
-      <h2 data-aos = "fade-up" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">Services</h2>
+    <section id="services">
+      <h5 {...fadeUp}>What I offer</h5>
+      <h2 {...fadeUp}>Services</h2>
       <div className="container services__container">
-        <article className='service'
-        data-aos = "fade-right" data-aos-easing = "ease-out-cubic" data-aos-duration = "50000">
-          <div className="service__head">
-            <h3>FRONTEND DEVELOPMENT</h3>
-          </div>
-          <ul className="service__list">
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>Implement user interface designs.</p>
-             </li>  
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>Develop responsive, mobile-friendly designs.</p>
-             </li> 
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>Add interactivity with prefered language.</p>
-             </li> 
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>Test and debug frontend code.</p>
-             </li> 
-
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>Collaborate with cross-functional teams.</p>
-             </li> 
-          </ul>
-        </article>
-        {/* END OF UI/UX */}
-        <article className='service'
-        data-aos = "fade-up"
-        data-aos-easing = "ease-out-cubic"
-        data-aos-duration = "2000">
-          <div className="service__head">
-            <h3>API DEVELOPMENT</h3> 
-          </div>
-          <ul className="service__list">
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>API Design</p>
-             </li>  
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>API Documentation</p>
-             </li> 
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>Collaboration with frontend developers.</p>
-             </li>
-          </ul>
-        </article>
-        {/* END OF WEB DEVELOPMENT */}
-        
-        <article className='service'
-        data-aos = "fade-left"
-        data-aos-easing = "ease-out-cubic"
-        data-aos-duration = "3000">
-          <div className="service__head">
-            <h3>Technical Writing</h3>
-          </div>
-          <ul className="service__list">
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>Create comprehensive documentation for software applications or systems.</p>
-             </li>  
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>I also craft user guides and manuals for effective product usage.</p>
-             </li> 
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>I also Document APIs with detailed information and examples.</p>
-             </li> 
-             <li>
-               <AiOutlineCheck className='service__list-icon'/>
-               <p>Write informative technical articles on software development and industry trends.</p>
-             </li>
-          </ul>
-        </article>
-        {/* END OF CONTENT CREATION */}
+        {services.map(({ title, aos, items }) => (
+          <article key={title} className="service" {...aos}>
+            <div className="service__head">
+              <h3>{title}</h3>
+            </div>
+            <ul className="service__list">
+              {items.map((item) => (
+                <li key={item}>
+                  <AiOutlineCheck className="service__list-icon" />
+                  <p>{item}</p>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Services;
-
