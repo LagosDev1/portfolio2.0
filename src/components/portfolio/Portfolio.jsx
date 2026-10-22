@@ -26,7 +26,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
         {projects.map(({ image, title, github, demo }, index) => (
-          <article key={index} className="portfolio__item" {...fadeUp}>
+          <article key={index} className="portfolio__item spotlight" {...fadeUp}>
             <div className="portfolio__item-image">
               <img src={image} alt={title} />
             </div>

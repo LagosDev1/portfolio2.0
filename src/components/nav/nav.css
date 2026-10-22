@@ -21,6 +21,7 @@ nav a {
     display: flex;
     color: var(--color-light);
     font-size: 1.05rem;
+    transition: var(--transition);
 }
 
 nav a:hover{

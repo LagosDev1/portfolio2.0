@@ -14,6 +14,31 @@ header{
     color: rgb(194, 151, 34);
 }
 
+/* Typewriter caret; also keeps the line from collapsing while the text is empty */
+.typewriter__caret{
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    margin-left: 2px;
+    vertical-align: -0.15em;
+    background: var(--color-primary);
+    animation: caret-blink 1s steps(1) infinite;
+}
+
+@keyframes caret-blink{
+    50% { opacity: 0; }
+}
+
+/* Gentle float on the hero photo (the wrapper's transform belongs to AOS) */
+.mainIMAGE img{
+    animation: hero-float 6s ease-in-out infinite;
+}
+
+@keyframes hero-float{
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
 /*CTA button*/
 .cta {
     margin-top: 2.5rem;

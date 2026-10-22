@@ -2,9 +2,12 @@ import React from 'react';
 import './header.css';
 import CTA from './CTA';
 import HeaderSocials from './HeaderSocials';
+import Typewriter from './Typewriter';
 import mainIMAGE from '../../assets/mainIMAGE.png';
 
 const fadeUp = { 'data-aos': 'fade-up', 'data-aos-easing': 'ease-out-cubic' };
+
+const roles = ['Software Developer', 'Frontend Engineer', 'API Developer', 'Technical Writer'];
 
 const Header = () => {
   return (
@@ -12,7 +15,7 @@ const Header = () => {
       <div className="container header__container" {...fadeUp}>
         <h5>Hello, I am</h5>
         <h1>Godspower Abah</h1>
-        <h5 className="fullstack">Software Developer</h5>
+        <h5 className="fullstack"><Typewriter words={roles} /></h5>
         <CTA />
         <HeaderSocials />
         <div className="mainIMAGE" {...fadeUp}>

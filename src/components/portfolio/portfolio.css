@@ -23,6 +23,14 @@
     overflow: hidden;
 }
 
+.portfolio__item-image img{
+    transition: transform 600ms ease;
+}
+
+.portfolio__item:hover .portfolio__item-image img{
+    transform: scale(1.06);
+}
+
 .portfolio__item h3 {
     margin: 1.2rem 0 2rem;
 }

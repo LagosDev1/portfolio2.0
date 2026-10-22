@@ -117,6 +117,59 @@ img{
     object-fit: cover;
 }
 
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+/* Cursor-following glow on cards (positions set by useSpotlight) */
+.spotlight{
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.spotlight::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: radial-gradient(
+        280px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+        rgba(77, 181, 255, 0.18),
+        transparent 70%
+    );
+    opacity: 0;
+    transition: opacity 300ms ease;
+    pointer-events: none;
+}
+
+.spotlight:hover::before{
+    opacity: 1;
+}
+
+@media (hover: none){
+    .spotlight::before{
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 
 /* Media Queries (Medium devies like Tablet) */
 @media screen and (max-width :1024px){

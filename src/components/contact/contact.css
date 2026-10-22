@@ -53,8 +53,40 @@ input, textarea{
     color: var(--color-white);
 }
 
+input:focus, textarea:focus{
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(77, 181, 255, 0.12);
+}
+
+input, textarea{
+    transition: border-color 300ms ease, box-shadow 300ms ease;
+}
+
+form button:disabled{
+    opacity: 0.6;
+    cursor: progress;
+}
+
 .message-alert{
-    color: rgb(255, 255, 255);
+    color: var(--color-white);
+    padding: 0.9rem 1.2rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid;
+    background: var(--color-bg-variant);
+    animation: alert-in 400ms ease;
+}
+
+.message-alert--success{
+    border-color: #4ade80;
+}
+
+.message-alert--error{
+    border-color: #f87171;
+}
+
+@keyframes alert-in{
+    from { opacity: 0; transform: translateY(-0.5rem); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Media Queries (Medium devies like Tablet) */

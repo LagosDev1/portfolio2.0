@@ -35,7 +35,7 @@ const Experience = () => {
 
       <div className="container experience__container">
         {skillGroups.map(({ className, title, skills }) => (
-          <div key={title} className={className} {...fadeUp}>
+          <div key={title} className={`${className} spotlight`} {...fadeUp}>
             <h3>{title}</h3>
             <div className="experience__content">
               {skills.map(({ name, level }) => (

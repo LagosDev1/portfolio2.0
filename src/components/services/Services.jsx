@@ -44,7 +44,7 @@ const Services = () => {
       <h2 {...fadeUp}>Services</h2>
       <div className="container services__container">
         {services.map(({ title, aos, items }) => (
-          <article key={title} className="service" {...aos}>
+          <article key={title} className="service spotlight" {...aos}>
             <div className="service__head">
               <h3>{title}</h3>
             </div>

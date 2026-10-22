@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './contact.css';
 import { MdOutlineEmail } from 'react-icons/md';
 import { FaTwitterSquare } from 'react-icons/fa';
@@ -15,17 +15,31 @@ const contactOptions = [
 
 const Contact = () => {
   const form = useRef();
-  const [messageSent, setMessageSent] = useState(false);
+  const [status, setStatus] = useState('idle'); // idle | sending | sent | error
+
+  // Hide the success/error message after a few seconds
+  useEffect(() => {
+    if (status !== 'sent' && status !== 'error') return;
+    const timer = setTimeout(() => setStatus('idle'), 5000);
+    return () => clearTimeout(timer);
+  }, [status]);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const formElement = e.target;
+    setStatus('sending');
 
     emailjs.sendForm('service_ez31y4x', 'template_cbva0kw', form.current, '7ukr8B-_yeM9Nu_7g')
       .then(
-        () => setMessageSent(true),
-        (error) => console.error(error.text)
+        () => {
+          setStatus('sent');
+          formElement.reset();
+        },
+        (error) => {
+          console.error(error.text);
+          setStatus('error');
+        }
       );
-    e.target.reset();
   };
 
   return (
@@ -36,7 +50,7 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           {contactOptions.map(({ icon: Icon, label, handle, href }) => (
-            <article key={label} className="contact__option" {...fadeUp}>
+            <article key={label} className="contact__option spotlight" {...fadeUp}>
               <Icon className="contact__option-icon" />
               <h4>{label}</h4>
               <h5>{handle}</h5>
@@ -50,9 +64,18 @@ const Contact = () => {
           <input type="email" name="email" placeholder="Your Email" required />
           <input type="text" name="subject" placeholder="Subject" required />
           <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
-          <button type="submit" className="btn btn-primary">Send Message</button>
+          <button type="submit" className="btn btn-primary" disabled={status === 'sending'}>
+            {status === 'sending' ? 'Sending…' : 'Send Message'}
+          </button>
+          <div role="status" aria-live="polite">
+            {status === 'sent' && (
+              <p className="message-alert message-alert--success">Message sent! I'll get back to you soon.</p>
+            )}
+            {status === 'error' && (
+              <p className="message-alert message-alert--error">Something went wrong. Please try again or email me directly.</p>
+            )}
+          </div>
         </form>
-        {messageSent && <div className="message-alert">Message sent!</div>}
       </div>
     </section>
   );

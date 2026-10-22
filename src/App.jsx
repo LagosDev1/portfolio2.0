@@ -10,6 +10,10 @@ import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import ScrollProgress from './components/extras/ScrollProgress';
+import BackToTop from './components/extras/BackToTop';
+import CursorGlow from './components/extras/CursorGlow';
+import useSpotlight from './hooks/useSpotlight';
 
 const LOADER_DURATION_MS = 4000;
 
@@ -24,6 +28,7 @@ const loaderStyle = {
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  useSpotlight();
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), LOADER_DURATION_MS);
@@ -44,6 +49,8 @@ const App = () => {
 
   return (
     <>
+      <CursorGlow />
+      <ScrollProgress />
       <Header />
       <Nav />
       <About />
@@ -52,6 +59,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
+      <BackToTop />
     </>
   );
 };

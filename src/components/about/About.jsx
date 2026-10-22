@@ -4,13 +4,14 @@ import meAbout from '../../assets/meAbout.png';
 import { FaAward } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import { AiFillFolderOpen } from 'react-icons/ai';
+import CountUp from './CountUp';
 
 const fadeUp = { 'data-aos': 'fade-up', 'data-aos-easing': 'ease-out-cubic' };
 
 const stats = [
-  { icon: FaAward, title: 'Experience', text: '4+ Years Working Experience' },
-  { icon: FiUsers, title: 'Clients', text: '200+ Worldwide' },
-  { icon: AiFillFolderOpen, title: 'Projects', text: '30+ completed projects' },
+  { icon: FaAward, title: 'Experience', value: 4, text: 'Years Working Experience' },
+  { icon: FiUsers, title: 'Clients', value: 200, text: 'Worldwide' },
+  { icon: AiFillFolderOpen, title: 'Projects', value: 30, text: 'Completed Projects' },
 ];
 
 const About = () => {
@@ -27,10 +28,11 @@ const About = () => {
 
         <div className="about__content">
           <div className="about__cards">
-            {stats.map(({ icon: Icon, title, text }) => (
-              <article key={title} className="about__card" {...fadeUp}>
+            {stats.map(({ icon: Icon, title, value, text }) => (
+              <article key={title} className="about__card spotlight" {...fadeUp}>
                 <Icon className="about__icon" />
                 <h5>{title}</h5>
+                <strong className="about__stat"><CountUp end={value} suffix="+" /></strong>
                 <small>{text}</small>
               </article>
             ))}

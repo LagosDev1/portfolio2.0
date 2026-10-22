@@ -62,6 +62,15 @@
     font-size: 0.95rem;
 }
 
+.about__stat{
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    font-variant-numeric: tabular-nums;
+}
+
 .about__card small{
     font-size: 0.7rem;
     color: var(--color-light);
