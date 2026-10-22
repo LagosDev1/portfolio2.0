@@ -74,7 +74,13 @@ header{
 /* Media Queries (Medium devies like Tablet) */
 @media screen and (max-width :1024px){
     header{
-        height: 68vh;
+        height: auto;
+    }
+    /* Keep the image in the flow so the header grows to fit it instead of clipping it */
+    .mainIMAGE{
+        position: relative;
+        left: auto;
+        margin: 4rem auto 0;
     }
     .scroll__down{
         bottom: 5rem;
@@ -83,9 +89,6 @@ header{
 
 /* Media Queries (small devies like phones) */
 @media screen and (max-width :600px){
-    header{
-        height: 110vh;
-    }
     .header__socials, .scroll__down{
         display: none;
     }
