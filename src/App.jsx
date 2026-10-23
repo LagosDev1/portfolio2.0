@@ -13,6 +13,7 @@ import Footer from './components/footer/Footer';
 import ScrollProgress from './components/extras/ScrollProgress';
 import BackToTop from './components/extras/BackToTop';
 import CursorGlow from './components/extras/CursorGlow';
+import Snowfall from './components/extras/Snowfall';
 import useSpotlight from './hooks/useSpotlight';
 
 const LOADER_DURATION_MS = 4000;
@@ -50,6 +51,7 @@ const App = () => {
   return (
     <>
       <CursorGlow />
+      <Snowfall />
       <ScrollProgress />
       <Header />
       <Nav />
