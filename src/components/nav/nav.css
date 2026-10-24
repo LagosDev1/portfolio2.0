@@ -7,7 +7,7 @@ nav{
     position: fixed;
     left: 50%;
     transform: translate(-50%);
-    bottom: 0.7rem;
+    bottom: calc(0.7rem + env(safe-area-inset-bottom));
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem ;

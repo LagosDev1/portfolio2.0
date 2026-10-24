@@ -27,7 +27,6 @@
 
 html{
     scroll-behavior: smooth;
-
 }
 
 ::-webkit-scrollbar{
@@ -40,6 +39,9 @@ body{
     color: var(--color-white);
     line-height: 1.7;
     background-image: url(../src/assets/bg-texture.png);
+    /* Keep content clear of the notch in landscape (0 elsewhere) */
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
 }  
 
 /* General styles */

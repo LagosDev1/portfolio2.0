@@ -22,7 +22,7 @@ const loaderStyle = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  background: 'black',
+  background: 'var(--color-bg)', // same colour as the iPhone status bar (theme-color)
   width: '100%',
   height: '100vh',
 };
