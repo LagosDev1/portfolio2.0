@@ -75,6 +75,42 @@ section > h2{
     margin-bottom: 3rem;
 }
 
+/* Underline that grows once the heading has animated in */
+section > h2::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    margin: 0.5rem auto 0;
+    border-radius: 3px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    transition: width 800ms ease 300ms;
+}
+
+section > h2.aos-animate::after{
+    width: 4rem;
+}
+
+/* Light sweeping across the hero name */
+header h1{
+    background: linear-gradient(
+        100deg,
+        var(--color-white) 40%,
+        var(--color-primary) 50%,
+        var(--color-white) 60%
+    );
+    background-size: 250% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: name-shimmer 6s ease-in-out infinite;
+}
+
+@keyframes name-shimmer{
+    0% { background-position: 100% 0; }
+    50%, 100% { background-position: 0% 0; }
+}
+
 .text-light {
     color: var(--color-light);
 }
@@ -98,6 +134,25 @@ a:hover{
     border: 1px solid var(--color-primary);
     transition: var(--transition);
 
+}
+
+/* Click ripple (spawned by useRipple) */
+.btn{
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple{
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    transform: scale(0);
+    animation: ripple 600ms ease-out;
+    pointer-events: none;
+}
+
+@keyframes ripple{
+    to { transform: scale(1); opacity: 0; }
 }
 
 .btn:hover{

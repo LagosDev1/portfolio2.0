@@ -71,3 +71,17 @@
 }
 
 
+
+/* Skill hover: icon spins, name lights up */
+.experience__details-icon,
+.experience__details h4{
+    transition: transform 500ms ease, color 300ms ease;
+}
+
+.experience__details:hover .experience__details-icon{
+    transform: rotate(360deg) scale(1.25);
+}
+
+.experience__details:hover h4{
+    color: var(--color-primary);
+}

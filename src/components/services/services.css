@@ -75,3 +75,17 @@
 }
 
 
+
+/* Service item hover: text nudges right, check pops */
+.service__list p,
+.service__list-icon{
+    transition: transform 300ms ease;
+}
+
+.service__list li:hover p{
+    transform: translateX(4px);
+}
+
+.service__list li:hover .service__list-icon{
+    transform: scale(1.3);
+}

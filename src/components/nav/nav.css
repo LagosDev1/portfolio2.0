@@ -39,3 +39,11 @@ nav a.active{
 
 
 
+
+nav a svg{
+    transition: transform 300ms ease;
+}
+
+nav a:hover svg{
+    transform: scale(1.2);
+}

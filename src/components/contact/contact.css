@@ -104,3 +104,14 @@ form button:disabled{
     }
 }
 
+
+/* Contact card hover: icon gives a little bounce */
+.contact__option:hover .contact__option-icon{
+    animation: icon-bounce 600ms ease;
+}
+
+@keyframes icon-bounce{
+    0%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-6px); }
+    60% { transform: translateY(2px); }
+}

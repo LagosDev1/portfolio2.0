@@ -22,8 +22,8 @@ const projects = [
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5 {...fadeUp}>My Recent Work</h5>
+      <h2 {...fadeUp}>Portfolio</h2>
       <div className="container portfolio__container">
         {projects.map(({ image, title, github, demo }, index) => (
           <article key={index} className="portfolio__item spotlight" {...fadeUp}>

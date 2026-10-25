@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:2.5rem;
-
+    perspective: 1000px; /* depth for the card tilt */
 }
 
 .portfolio__item{

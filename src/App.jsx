@@ -15,6 +15,8 @@ import BackToTop from './components/extras/BackToTop';
 import CursorGlow from './components/extras/CursorGlow';
 import Snowfall from './components/extras/Snowfall';
 import useSpotlight from './hooks/useSpotlight';
+import usePointerEffects from './hooks/usePointerEffects';
+import useRipple from './hooks/useRipple';
 
 const LOADER_DURATION_MS = 4000;
 
@@ -30,6 +32,8 @@ const loaderStyle = {
 const App = () => {
   const [loading, setLoading] = useState(true);
   useSpotlight();
+  usePointerEffects();
+  useRipple();
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), LOADER_DURATION_MS);
