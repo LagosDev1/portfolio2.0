@@ -5,7 +5,7 @@ const DENSITY = 1 / 12000; // flakes per square pixel of viewport
 const MAX_FLAKES = 140;
 
 // Shake-to-grow
-const MAX_SCALE = 4; // flake size multiplier at full shake
+const MAX_SCALE = 10; // flake size multiplier at full shake (0.5–2px flakes become 5–20px snowballs)
 const SHAKE_THRESHOLD = 15; // m/s² of sudden change that counts as a shake
 const SHAKE_GAIN = 0.0015; // how fast flakes grow while shaking (~1s of shaking to reach full size)
 const SETTLE_MS = 300; // no jolts for this long = the phone has stopped
