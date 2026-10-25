@@ -1,0 +1,98 @@
+.tech__container{
+    --cube-size: 7rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem 2rem;
+    justify-items: center;
+}
+
+.tech__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.tech__scene{
+    width: var(--cube-size);
+    height: var(--cube-size);
+    perspective: 600px;
+}
+
+.tech__cube{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    cursor: grab;
+    touch-action: pan-y; /* vertical swipes still scroll the page on phones */
+    user-select: none;
+    outline: none;
+}
+
+.tech__cube.dragging{
+    cursor: grabbing;
+}
+
+.tech__cube:focus-visible .tech__face{
+    border-color: var(--color-white);
+}
+
+.tech__face{
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--brand);
+    border-radius: 0.8rem;
+    background: rgba(44, 44, 108, 0.85);
+    box-shadow: inset 0 0 1.5rem color-mix(in srgb, var(--brand) 25%, transparent);
+    backface-visibility: hidden;
+}
+
+.tech__face--front { transform: translateZ(calc(var(--cube-size) / 2)); }
+.tech__face--back { transform: rotateY(180deg) translateZ(calc(var(--cube-size) / 2)); }
+.tech__face--right { transform: rotateY(90deg) translateZ(calc(var(--cube-size) / 2)); }
+.tech__face--left { transform: rotateY(-90deg) translateZ(calc(var(--cube-size) / 2)); }
+.tech__face--top { transform: rotateX(90deg) translateZ(calc(var(--cube-size) / 2)); }
+.tech__face--bottom { transform: rotateX(-90deg) translateZ(calc(var(--cube-size) / 2)); }
+
+.tech__icon{
+    font-size: calc(var(--cube-size) * 0.42);
+    color: var(--brand);
+    filter: drop-shadow(0 0 0.6rem color-mix(in srgb, var(--brand) 50%, transparent));
+}
+
+.tech__name{
+    padding: 0 0.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--brand);
+}
+
+.tech__label{
+    font-size: 0.9rem;
+    color: var(--color-light);
+}
+
+/* Media Queries (Medium devies like Tablet) */
+@media screen and (max-width :1024px){
+    .tech__container{
+        --cube-size: 6rem;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem 1.5rem;
+    }
+}
+
+/* Media Queries (small devies like phones) */
+@media screen and (max-width :600px){
+    .tech__container{
+        --cube-size: 5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 1rem;
+    }
+    .tech__name{
+        font-size: 0.75rem;
+    }
+}
